@@ -23,26 +23,7 @@ class DeleteCard : IOperation
                 break;
             }
         }
-        foreach (var item in Databases.CardList)
-        {
-            if (item.Title == lookForTitle)
-            {
-                Databases.CardList.Remove(item);
-                isFound = true;
-                Console.WriteLine(lookForTitle + " başlıklı Kart başarıyla silindi.");
-                break;
-            }
-        }
-        foreach (var item in Databases.CardList)
-        {
-            if (item.Title == lookForTitle)
-            {
-                Databases.CardList.Remove(item);
-                isFound = true;
-                Console.WriteLine(lookForTitle + " başlıklı Kart başarıyla silindi.");
-                break;
-            }
-        }
+    
 
         if(isFound == false){
             Console.WriteLine("Aradığınız kritere uygun kart Board'da bulunamadı. Lütfen bir seçim yapınız");
